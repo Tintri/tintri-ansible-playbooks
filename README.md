@@ -1,5 +1,5 @@
 # Tintri Ansible Playbooks #
-Tintri Ansible playbooks.
+This is a collection of Ansible playbooks for Tintri's VMstore and TGC. 
 
 There is a library of Python scripts that interfaces Ansible to [Tintri's Python SDK](https://github.com/Tintri/tintri-python-sdk). The roles directory contains various roles that administrators managing
 Tintri servers might find useful.
