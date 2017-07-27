@@ -1,0 +1,12 @@
+- hosts: localhost
+  tasks:
+    - name: Update VMStore Datetime configuration
+      update_datetime_config:
+        server: vmstore.vmlevel.com
+        user: admin
+        password: luns_suck
+        timezone: US/Pacific
+        ntpPrimary: ntp.vmlevel.com
+      register: result
+
+    - debug: var=result

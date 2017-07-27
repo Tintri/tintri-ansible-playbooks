@@ -1,0 +1,14 @@
+- hosts: localhost
+  tasks:
+    - name: Add Hypervisor Manager to VMStore 
+      add_hypervisor_config:
+        server: vmstore.vmlevel.com
+        user: admin
+        password: luns_suck
+        host: my-eng.vmlevel.com
+        hypervisorType: VMWARE
+        username: vmlevel\leucetios
+        hypervisor_password: xxxxx
+      register: result
+
+    - debug: var=result

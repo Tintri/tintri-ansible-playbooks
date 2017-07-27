@@ -1,0 +1,10 @@
+- hosts: localhost
+  tasks:
+    - name: Restart VMStore web server
+      restart_webserver:
+        server: vmstore.vmlevel.com
+        user: admin
+        password: luns_suck
+      register: result
+
+    - debug: var=result

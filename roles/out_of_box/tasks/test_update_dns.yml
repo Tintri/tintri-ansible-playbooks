@@ -1,0 +1,11 @@
+- hosts: localhost
+  tasks:
+    - name: Update VMStore DNS configuration
+      update_dns_config:
+        server: vmstore.vmlevel.com
+        user: admin
+        password: luns_suck
+        dnsPrimary: 10.10.10.41
+      register: result
+
+    - debug: var=result

@@ -1,0 +1,12 @@
+- hosts: localhost
+  tasks:
+    - name: Update VMStore support contact configuration
+      update_contact_config:
+        server: vmstore.vmlevel.com
+        user: admin
+        password: luns_suck
+        contact: testuser
+        email: leucetios@vmlevel.com
+      register: result
+
+    - debug: var=result

@@ -1,0 +1,13 @@
+- hosts: localhost
+  tasks:
+    - name: Add data network to VMStore 
+      add_data_network_config:
+        server: vmstore.vmlevel.com
+        user: admin
+        password: luns_suck
+        ip: 192.168.0.42
+        netmask: 255.255.255.0
+        gateway: 192.168.0.1
+      register: result
+
+    - debug: var=result

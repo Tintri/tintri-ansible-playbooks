@@ -1,0 +1,12 @@
+- hosts: localhost
+  tasks:
+    - name: Update VMStore Email configuration
+      update_email_config:
+        server: vmstore.vmlevel.com
+        user: admin
+        password: luns_suck
+        fromEmail: postmaster@vmlevel.com
+        smtpHost: smtp.vmlevel.com
+      register: result
+
+    - debug: var=result
