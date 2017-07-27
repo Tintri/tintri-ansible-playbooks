@@ -1,8 +1,11 @@
 # Tintri Ansible Out of the box Playbook #
 This role is a for VMstore out of the box (OOB) configuration with a VMware hypervisor.
-It replaces the VMstore GUI OOB configuration.
+It replaces the VMstore GUI OOB configuration.  Note: Currently only VMware hypervisor
+is supported.  More to come.
 
-For initial OOB setup:
+Currently the roles only have tests.  A main.yml will be forth coming. In the mean time,
+here is the order for initial OOB:
+
 1. Add data network
 2. Update DNS 
 3. Update datetime 
